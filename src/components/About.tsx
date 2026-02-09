@@ -1,10 +1,11 @@
 import { CheckCircle } from "lucide-react";
 
 const highlights = [
-  "Locally owned & operated for over 10 years",
+  "Locally owned & operated",
   "Free estimates on all projects",
-  "Premium quality mulch sourced responsibly",
+  "No hauling, no burning — mulch stays on-site",
   "Fully insured and licensed",
+  "Minimal ground disturbance",
 ];
 
 const About = () => {
@@ -17,14 +18,15 @@ const About = () => {
               About Us
             </p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-              Rooted in Quality,
+              Clear the Brush,
               <br />
-              <span className="text-primary">Grown with Care</span>
+              <span className="text-primary">Keep the Land</span>
             </h2>
             <p className="text-muted-foreground text-lg font-body leading-relaxed mb-8">
-              We're a family-owned mulching business dedicated to helping homeowners and businesses
-              maintain beautiful, healthy landscapes. From a single garden bed to large commercial
-              properties, we bring the same attention to detail and commitment to excellence.
+              H & L Solutions specializes in forestry mulching — the most efficient, eco-friendly way to
+              reclaim overgrown land. Our equipment grinds underbrush and small trees into natural mulch
+              that stays on-site, enriching your soil and preventing erosion. No burning, no hauling,
+              no heavy equipment tearing up your property.
             </p>
             <ul className="space-y-4">
               {highlights.map((item) => (
@@ -38,12 +40,12 @@ const About = () => {
 
           <div className="relative">
             <div className="bg-primary/10 rounded-lg p-12 text-center">
-              <div className="text-6xl font-display font-bold text-primary mb-2">10+</div>
-              <p className="text-muted-foreground font-body text-lg">Years of Experience</p>
+              <div className="text-6xl font-display font-bold text-primary mb-2">100+</div>
+              <p className="text-muted-foreground font-body text-lg">Acres Cleared</p>
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-display font-bold text-foreground">500+</div>
-                  <p className="text-muted-foreground font-body text-sm">Projects Completed</p>
+                  <div className="text-3xl font-display font-bold text-foreground">Fast</div>
+                  <p className="text-muted-foreground font-body text-sm">Same-Week Scheduling</p>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-foreground">100%</div>

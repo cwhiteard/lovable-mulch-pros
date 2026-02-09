@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <span className="font-display text-xl font-bold text-earth-foreground">H & L Solutions</span>
             <p className="text-earth-foreground/60 font-body text-sm mt-1">
-              Premium mulching services for your landscape.
+              Forestry mulching & land reclamation services.
             </p>
           </div>
           <div className="flex gap-8">

@@ -18,8 +18,8 @@ const Contact = () => {
               <span className="text-primary">Free Quote</span>
             </h2>
             <p className="text-muted-foreground text-lg font-body leading-relaxed mb-10">
-              Ready to transform your landscape? Reach out and we'll get back to you within 24 hours
-              with a free, no-obligation estimate.
+              Got overgrown land that needs clearing? Reach out and we'll get back to you within 24 hours
+              with a free, no-obligation estimate for your project.
             </p>
 
             <div className="space-y-6">
@@ -86,7 +86,7 @@ const Contact = () => {
                   Tell us about your project
                 </label>
                 <Textarea
-                  placeholder="Describe the area, type of mulch you're interested in, etc."
+                  placeholder="Describe the area — approximate acreage, type of vegetation, access to the site, etc."
                   className="font-body min-h-[120px]"
                 />
               </div>
