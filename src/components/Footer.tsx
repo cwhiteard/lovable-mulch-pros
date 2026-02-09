@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
-            <span className="font-display text-xl font-bold text-earth-foreground">MulchPro</span>
+            <span className="font-display text-xl font-bold text-earth-foreground">H & L Solutions</span>
             <p className="text-earth-foreground/60 font-body text-sm mt-1">
               Premium mulching services for your landscape.
             </p>
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-earth-foreground/10 mt-8 pt-8 text-center">
           <p className="text-earth-foreground/40 font-body text-sm">
-            © {new Date().getFullYear()} MulchPro. All rights reserved.
+            © {new Date().getFullYear()} H & L Solutions. All rights reserved.
           </p>
         </div>
       </div>
