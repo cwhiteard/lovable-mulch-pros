@@ -1,25 +1,25 @@
-import { Leaf, Truck, TreePine, Shovel } from "lucide-react";
+import { Trees, Tractor, MapPin, Shield } from "lucide-react";
 
 const services = [
   {
-    icon: Truck,
-    title: "Mulch Delivery",
-    description: "Bulk mulch delivered straight to your property. Choose from hardwood, cedar, pine bark, and colored varieties.",
+    icon: Trees,
+    title: "Underbrush Clearing",
+    description: "We mulch dense underbrush, saplings, and invasive vegetation up to 6\" in diameter, leaving clean ground behind.",
   },
   {
-    icon: Shovel,
-    title: "Installation",
-    description: "Our crew handles everything — from bed prep and edging to perfectly spread mulch at the ideal depth.",
+    icon: Tractor,
+    title: "Forestry Mulching",
+    description: "Our heavy-duty mulching equipment grinds vegetation in place — no hauling, no burning, no mess. Just cleared land.",
   },
   {
-    icon: TreePine,
-    title: "Land Clearing",
-    description: "We transform overgrown lots and wooded areas into clean, usable space with professional clearing services.",
+    icon: MapPin,
+    title: "Property Line Clearing",
+    description: "Reclaim overgrown fence lines, property boundaries, and easements so you can see and use your full acreage.",
   },
   {
-    icon: Leaf,
-    title: "Seasonal Refresh",
-    description: "Keep your beds looking fresh with our seasonal top-off service. We'll maintain perfect coverage all year.",
+    icon: Shield,
+    title: "Fire Prevention",
+    description: "Reduce wildfire risk by creating defensible space around structures. We clear fuel loads and create firebreaks.",
   },
 ];
 
