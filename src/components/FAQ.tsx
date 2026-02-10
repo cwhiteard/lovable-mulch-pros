@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "How much does forestry mulching cost?",
-    answer: "Pricing is based on acreage, brush density, and terrain. We price by the project — not by the day — so you know exactly what to expect. Contact us for a free estimate.",
+    answer: "Pricing is based on acreage, brush density, and terrain. We price by the project, day, or the hour to offer flexibility. Contact us for a free estimate.",
   },
   {
     question: "How long will my project take?",
