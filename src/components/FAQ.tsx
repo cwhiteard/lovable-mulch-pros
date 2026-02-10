@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Do you remove large trees?",
-    answer: "We specialize in brush, saplings, and trees up to about 8 inches. For larger trees, we can coordinate with licensed tree services.",
+    answer: "We specialize in brush, saplings, and trees up to about 6 inches. For larger trees, we can pile to burn/haul away, or coordinate with licensed tree services for sensitive areas. We also offer grapple service to clean up any fallen or downed trees.",
   },
   {
     question: "Will brush grow back?",
