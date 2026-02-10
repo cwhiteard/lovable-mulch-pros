@@ -41,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Call Us</p>
-                  <p className="text-foreground font-body font-semibold">(555) 123-4567</p>
+                  <p className="text-foreground font-body font-semibold">(256) 749-5191</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Email Us</p>
-                  <p className="text-foreground font-body font-semibold">info@hlsolutions.com</p>
+                  <p className="text-foreground font-body font-semibold">hlsolutions@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Service Area</p>
-                  <p className="text-foreground font-body font-semibold">Greater Metro Area & Surrounding Counties</p>
+                  <p className="text-foreground font-body font-semibold">Alexander City Area — Tallapoosa, Clay & Coosa Counties</p>
                 </div>
               </div>
             </div>
