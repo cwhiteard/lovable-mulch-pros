@@ -10,23 +10,20 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-sand">
+    <section id="about" className="py-20 bg-background">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-accent font-body text-sm uppercase tracking-[0.25em] font-semibold mb-3">
+            <p className="text-primary font-body text-sm uppercase tracking-[0.2em] font-semibold mb-3">
               About Us
             </p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-              Clear the Brush,
-              <br />
-              <span className="text-primary">Keep the Land</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              Clear the Brush, Keep the Land
             </h2>
             <p className="text-muted-foreground text-lg font-body leading-relaxed mb-8">
               H & L Solutions specializes in forestry mulching — the most efficient, eco-friendly way to
               reclaim overgrown land. Our equipment grinds underbrush and small trees into natural mulch
-              that stays on-site, enriching your soil and preventing erosion. No burning, no hauling,
-              no heavy equipment tearing up your property.
+              that stays on-site, enriching your soil and preventing erosion.
             </p>
             <ul className="space-y-4">
               {highlights.map((item) => (
@@ -39,7 +36,7 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-primary/10 rounded-lg p-12 text-center">
+            <div className="bg-card rounded-lg p-12 text-center border border-border">
               <div className="text-6xl font-display font-bold text-primary mb-2">100+</div>
               <p className="text-muted-foreground font-body text-lg">Acres Cleared</p>
               <div className="mt-8 grid grid-cols-2 gap-6">
