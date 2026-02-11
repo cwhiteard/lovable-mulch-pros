@@ -1,4 +1,4 @@
-import { Trees, Tractor, MapPin, Shield, Axe, Leaf } from "lucide-react";
+import { Trees, Tractor, MapPin, Shield, Axe, Leaf, Brush, Trash2, CloudRain } from "lucide-react";
 
 const services = [
   {
@@ -10,6 +10,11 @@ const services = [
     icon: Trees,
     title: "Underbrush Clearing",
     description: "Dense brush, saplings, and vegetation up to 6\" — cleared clean.",
+  },
+  {
+    icon: Brush,
+    title: "Brush Hogging",
+    description: "Mow down tall grass, weeds, and overgrown fields efficiently.",
   },
   {
     icon: MapPin,
@@ -30,6 +35,16 @@ const services = [
     icon: Leaf,
     title: "Invasive Growth Removal",
     description: "Eliminate honeysuckle, briars, and invasive species.",
+  },
+  {
+    icon: Trash2,
+    title: "Debris Removal",
+    description: "Clear fallen limbs, brush piles, and land debris from your property.",
+  },
+  {
+    icon: CloudRain,
+    title: "Storm Clean Up",
+    description: "Fast response to storm damage — downed trees, debris, and restoration.",
   },
 ];
 
