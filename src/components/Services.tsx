@@ -1,10 +1,20 @@
-import { Trees, Tractor, MapPin, Shield, Axe, Leaf, Brush, Trash2, CloudRain } from "lucide-react";
+import { Trees, Tractor, MapPin, Shield, Axe, Leaf, Brush, Trash2, CloudRain, LucideIcon } from "lucide-react";
+import forestryMulchingImg from "@/assets/service-forestry-mulching.jpg";
+import brushHoggingImg from "@/assets/service-brush-hogging.jpg";
 
-const services = [
+interface Service {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const services: Service[] = [
   {
     icon: Tractor,
     title: "Forestry Mulching",
     description: "Reclaim land in a single pass. No burning, no hauling.",
+    image: forestryMulchingImg,
   },
   {
     icon: Trees,
@@ -15,6 +25,7 @@ const services = [
     icon: Brush,
     title: "Brush Hogging",
     description: "Mow down tall grass, weeds, and overgrown fields efficiently.",
+    image: brushHoggingImg,
   },
   {
     icon: MapPin,
@@ -68,17 +79,32 @@ const Services = () => {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-background rounded-lg p-8 border border-border hover:border-primary/40 transition-all duration-300"
+              className="group bg-background rounded-lg border border-border hover:border-primary/40 transition-all duration-300 overflow-hidden"
             >
-              <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                <service.icon className="w-6 h-6 text-primary" />
+              {service.image ? (
+                <div className="w-full h-40 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <div className="p-8 pb-0">
+                  <div className="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="w-6 h-6 text-primary" />
+                  </div>
+                </div>
+              )}
+              <div className={service.image ? "p-6" : "px-8 pb-8"}>
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground font-body leading-relaxed text-sm">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground font-body leading-relaxed text-sm">
-                {service.description}
-              </p>
             </div>
           ))}
         </div>
