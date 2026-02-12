@@ -1,8 +1,8 @@
-import { Trees, Tractor, MapPin, Shield, Axe, Leaf, Brush, Trash2, CloudRain } from "lucide-react";
+import { Trees, Construction, Tractor, MapPin, Shield, Axe, Leaf, Brush, Trash2, CloudRain } from "lucide-react";
 
 const services = [
   {
-    icon: Tractor,
+    icon: Construction,
     title: "Forestry Mulching",
     description: "Reclaim land in a single pass. No burning, no hauling.",
   },
@@ -12,7 +12,7 @@ const services = [
     description: "Dense brush, saplings, and vegetation up to 6\" — cleared clean.",
   },
   {
-    icon: Brush,
+    icon: Tractor,
     title: "Brush Hogging",
     description: "Mow down tall grass, weeds, and overgrown fields efficiently.",
   },
