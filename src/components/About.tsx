@@ -37,8 +37,8 @@ const About = () => {
 
           <div className="relative">
             <div className="bg-card rounded-lg p-12 text-center border border-border">
-              <div className="text-6xl font-display font-bold text-primary mb-2">100+</div>
-              <p className="text-muted-foreground font-body text-lg">Acres Cleared</p>
+              <div className="text-6xl font-display font-bold text-primary mb-2">15+</div>
+              <p className="text-muted-foreground font-body text-lg">Counties Served</p>
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div>
                   <div className="text-3xl font-display font-bold text-foreground">Fast</div>
