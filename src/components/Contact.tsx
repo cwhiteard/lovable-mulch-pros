@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Service Area</p>
-                  <p className="text-foreground font-body font-semibold">Alexander City Area — Tallapoosa, Clay & Coosa Counties</p>
+                  <p className="text-foreground font-body font-semibold">Alexander City Area — Tallapoosa, Clay & Surrounding Counties</p>
                 </div>
               </div>
             </div>
