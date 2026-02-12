@@ -1,0 +1,5 @@
+AddType text/javascript .js
+AddType application/javascript .js
+AddType text/javascript .mjs
+AddType text/css .css
+AddType application/wasm .wasm
