@@ -11,3 +11,4 @@ npm i
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 npm run build
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
