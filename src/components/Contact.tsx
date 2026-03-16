@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,6 +11,21 @@ const benefits = [
 ];
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Quote Request from ${firstName} ${lastName}`);
+    const body = encodeURIComponent(
+      `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\nProject Details:\n${message}`
+    );
+    window.location.href = `mailto:hlsolutionsal@gmail.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="contact" className="py-20 bg-card">
       <div className="container">
@@ -50,7 +66,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Email Us</p>
-                  <p className="text-foreground font-body font-semibold"><p className="text-foreground font-body font-semibold">hlsolutionsal@gmail.com</p></p>
+                  <p className="text-foreground font-body font-semibold">hlsolutionsal@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -66,32 +82,32 @@ const Contact = () => {
           </div>
 
           <div className="bg-background rounded-lg p-8 border border-border">
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-body font-medium text-foreground mb-1.5 block">
                     First Name
                   </label>
-                  <Input placeholder="John" className="font-body bg-card border-border" />
+                  <Input placeholder="John" className="font-body bg-card border-border" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
                 </div>
                 <div>
                   <label className="text-sm font-body font-medium text-foreground mb-1.5 block">
                     Last Name
                   </label>
-                  <Input placeholder="Doe" className="font-body bg-card border-border" />
+                  <Input placeholder="Doe" className="font-body bg-card border-border" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
                 </div>
               </div>
               <div>
                 <label className="text-sm font-body font-medium text-foreground mb-1.5 block">
                   Email
                 </label>
-                <Input type="email" placeholder="john@example.com" className="font-body bg-card border-border" />
+                <Input type="email" placeholder="john@example.com" className="font-body bg-card border-border" value={email} onChange={(e) => setEmail(e.target.value)} required />
               </div>
               <div>
                 <label className="text-sm font-body font-medium text-foreground mb-1.5 block">
                   Phone
                 </label>
-                <Input type="tel" placeholder="(555) 000-0000" className="font-body bg-card border-border" />
+                <Input type="tel" placeholder="(555) 000-0000" className="font-body bg-card border-border" value={phone} onChange={(e) => setPhone(e.target.value)} />
               </div>
               <div>
                 <label className="text-sm font-body font-medium text-foreground mb-1.5 block">
@@ -100,9 +116,12 @@ const Contact = () => {
                 <Textarea
                   placeholder="Describe the area — approximate acreage, type of vegetation, access to the site, etc."
                   className="font-body min-h-[120px] bg-card border-border"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </div>
-              <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-body text-base py-6 font-semibold">
+              <Button size="lg" type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-body text-base py-6 font-semibold">
                 Get a Free Quote
               </Button>
             </form>
