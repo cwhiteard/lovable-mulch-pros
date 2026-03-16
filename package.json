@@ -87,6 +87,3 @@
     "vitest": "^3.2.4"
   }
 }
-"publishConfig":{
-  "registry": "https://github.com/cwhiteard/lovable-mulch-pros.git"
-},
