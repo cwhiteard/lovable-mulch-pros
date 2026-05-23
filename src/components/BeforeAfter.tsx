@@ -1,5 +1,7 @@
 import before1 from "@/assets/before-1.jpg";
 import after1 from "@/assets/after-1.jpg";
+import before2 from "@/assets/before-2.jpg";
+import after2 from "@/assets/after-2.jpg";
 
 const pairs = [
   {
@@ -7,6 +9,12 @@ const pairs = [
     description: "Dense brush and tangled undergrowth cleared to open, usable land.",
     before: before1,
     after: after1,
+  },
+  {
+    title: "Fence Line Cleanup",
+    description: "Encroaching brush and saplings cleared back to restore a clean, defined fence line.",
+    before: before2,
+    after: after2,
   },
 ];
 
@@ -16,13 +24,13 @@ const BeforeAfter = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <p className="text-primary font-body text-sm uppercase tracking-[0.2em] font-semibold mb-3">
-            Featured Transformation
+            Featured Transformations
           </p>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-            Overgrown Lot Reclaimed
+            Before &amp; After
           </h2>
           <p className="text-muted-foreground text-lg mt-3">
-            See how dense brush and tangled undergrowth were cleared into open, usable land.
+            See how we transform overgrown land into clean, usable space.
           </p>
         </div>
 
