@@ -62,6 +62,7 @@ const BeforeAfter = () => {
                 </figure>
               </div>
               <div className="text-center">
+                <h3 className="text-xl font-display font-semibold text-foreground">{pair.title}</h3>
                 <p className="text-muted-foreground mt-1 max-w-xl mx-auto">{pair.description}</p>
               </div>
             </div>
