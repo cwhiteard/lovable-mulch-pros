@@ -5,6 +5,7 @@ import ProblemSolution from "@/components/ProblemSolution";
 import ReviewButton from "@/components/ReviewButton";
 import Process from "@/components/Process";
 import Services from "@/components/Services";
+import BeforeAfter from "@/components/BeforeAfter";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -20,6 +21,7 @@ const Index = () => {
       <ReviewButton />
       <Process />
       <Services />
+      <BeforeAfter />
       <About />
       <FAQ />
       <Contact />
