@@ -15,11 +15,14 @@ const BeforeAfter = () => {
     <section id="before-after" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Before &amp; After
+          <p className="text-primary font-body text-sm uppercase tracking-[0.2em] font-semibold mb-3">
+            Featured Transformation
+          </p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            Overgrown Lot Reclaimed
           </h2>
-          <p className="text-muted-foreground text-lg">
-            See the real transformations our land clearing and forestry mulching deliver.
+          <p className="text-muted-foreground text-lg mt-3">
+            See how dense brush and tangled undergrowth were cleared into open, usable land.
           </p>
         </div>
 
@@ -51,8 +54,7 @@ const BeforeAfter = () => {
                 </figure>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-semibold text-foreground">{pair.title}</h3>
-                <p className="text-muted-foreground mt-1">{pair.description}</p>
+                <p className="text-muted-foreground mt-1 max-w-xl mx-auto">{pair.description}</p>
               </div>
             </div>
           ))}
