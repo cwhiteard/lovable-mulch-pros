@@ -1,7 +1,5 @@
 import before1 from "@/assets/before-1.jpg";
 import after1 from "@/assets/after-1.jpg";
-import before2 from "@/assets/before-2.jpg";
-import after2 from "@/assets/after-2.jpg";
 
 const pairs = [
   {
@@ -9,12 +7,6 @@ const pairs = [
     description: "Dense brush and tangled undergrowth cleared to open, usable land.",
     before: before1,
     after: after1,
-  },
-  {
-    title: "Wooded Property Restored",
-    description: "Heavy underbrush and debris removed while preserving mature trees.",
-    before: before2,
-    after: after2,
   },
 ];
 
@@ -40,8 +32,6 @@ const BeforeAfter = () => {
                     src={pair.before}
                     alt={`Before: ${pair.title}`}
                     loading="lazy"
-                    width={1024}
-                    height={1024}
                     className="w-full h-72 md:h-96 object-cover"
                   />
                   <figcaption className="absolute top-3 left-3 bg-background/90 text-foreground text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded">
@@ -53,8 +43,6 @@ const BeforeAfter = () => {
                     src={pair.after}
                     alt={`After: ${pair.title}`}
                     loading="lazy"
-                    width={1024}
-                    height={1024}
                     className="w-full h-72 md:h-96 object-cover"
                   />
                   <figcaption className="absolute top-3 left-3 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded">
