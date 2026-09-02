@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,18 +11,72 @@ const benefits = [
   "Most projects scheduled in 1-2 weeks",
 ];
 
+// Strip characters that could break out of a mailto: URL or inject headers.
+const sanitize = (value: string) =>
+  value
+    .replace(/\r/g, "")
+    .replace(/[<>]/g, "")
+    .trim();
+
+const nameSchema = z
+  .string()
+  .trim()
+  .min(1, "Required")
+  .max(50, "Must be 50 characters or less")
+  .regex(/^[\p{L}\p{M}'’.\- ]+$/u, "Only letters, spaces, hyphens and apostrophes");
+
+const contactSchema = z.object({
+  firstName: nameSchema,
+  lastName: nameSchema,
+  email: z.string().trim().min(1, "Required").max(255, "Must be 255 characters or less").email("Enter a valid email address"),
+  phone: z
+    .string()
+    .trim()
+    .max(20, "Must be 20 characters or less")
+    .regex(/^[0-9+()\-.\s]*$/, "Enter a valid phone number")
+    .optional()
+    .or(z.literal("")),
+  message: z.string().trim().min(10, "Please add at least 10 characters").max(2000, "Must be 2000 characters or less"),
+});
+
+type FieldErrors = Partial<Record<keyof z.infer<typeof contactSchema>, string>>;
+
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState<FieldErrors>({});
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Quote Request from ${firstName} ${lastName}`);
+
+    const result = contactSchema.safeParse({ firstName, lastName, email, phone, message });
+    if (!result.success) {
+      const fieldErrors: FieldErrors = {};
+      for (const issue of result.error.issues) {
+        const key = issue.path[0] as keyof FieldErrors;
+        if (key && !fieldErrors[key]) fieldErrors[key] = issue.message;
+      }
+      setErrors(fieldErrors);
+      return;
+    }
+
+    setErrors({});
+    const data = result.data;
+    const subject = encodeURIComponent(
+      sanitize(`Quote Request from ${data.firstName} ${data.lastName}`)
+    );
     const body = encodeURIComponent(
-      `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\nProject Details:\n${message}`
+      [
+        `Name: ${sanitize(`${data.firstName} ${data.lastName}`)}`,
+        `Email: ${sanitize(data.email)}`,
+        `Phone: ${sanitize(data.phone ?? "")}`,
+        "",
+        "Project Details:",
+        sanitize(data.message),
+      ].join("\n")
     );
     window.location.href = `mailto:hlsolutionsal@gmail.com?subject=${subject}&body=${body}`;
   };
@@ -121,6 +176,15 @@ const Contact = () => {
                   required
                 />
               </div>
+              {Object.values(errors).length > 0 && (
+                <div className="rounded border border-destructive/50 bg-destructive/10 p-3 text-sm font-body text-destructive">
+                  <ul className="list-disc pl-4 space-y-1">
+                    {Object.values(errors).map((err) => (
+                      <li key={err}>{err}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <Button size="lg" type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-body text-base py-6 font-semibold">
                 Get a Free Quote
               </Button>
