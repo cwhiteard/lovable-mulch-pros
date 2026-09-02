@@ -124,6 +124,10 @@ const Contact = () => {
               <Button size="lg" type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-body text-base py-6 font-semibold">
                 Get a Free Quote
               </Button>
+              <p className="text-xs text-muted-foreground font-body text-center">
+                Submitting opens your email app with these details pre-filled to hlsolutionsal@gmail.com — just hit send. Prefer to talk? Call (256) 749-5191.
+              </p>
+
             </form>
           </div>
         </div>
