@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-background border-t border-border py-12">
@@ -9,19 +11,22 @@ const Footer = () => {
               Forestry mulching & land reclamation services.
             </p>
           </div>
-          <div className="flex gap-8">
-            <a href="#services" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
+          <div className="flex flex-wrap justify-center gap-8">
+            <a href="/#services" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
               Services
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
+            <a href="/#about" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
               About
             </a>
-            <a href="#faq" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
+            <a href="/#faq" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
               FAQ
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
+            <a href="/#contact" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
               Contact
             </a>
+            <Link to="/land-clearing-cost" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
+              Pricing Guide
+            </Link>
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-8 text-center">
