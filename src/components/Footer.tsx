@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { locations } from "@/data/locations";
 
 const Footer = () => {
   return (
@@ -32,18 +33,15 @@ const Footer = () => {
         <div className="mt-8 text-center">
           <p className="text-muted-foreground/80 font-body text-sm mb-3 uppercase tracking-widest">Service Areas</p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <Link to="/areas/alexander-city" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
-              Alexander City
-            </Link>
-            <Link to="/areas/dadeville" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
-              Dadeville
-            </Link>
-            <Link to="/areas/sylacauga" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
-              Sylacauga
-            </Link>
-            <Link to="/areas/ashland" className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors">
-              Ashland
-            </Link>
+            {locations.map((location) => (
+              <Link
+                key={location.slug}
+                to={`/areas/${location.slug}`}
+                className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors"
+              >
+                {location.city}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-8 text-center">
