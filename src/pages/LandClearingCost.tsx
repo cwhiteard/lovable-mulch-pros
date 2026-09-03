@@ -39,7 +39,7 @@ const priceRanges = [
   },
   {
     label: "Forestry mulching (moderate brush & saplings)",
-    range: "$800 – $2,000 per acre",
+    range: "$1,200 – $2,000 per acre",
   },
   {
     label: "Heavy mulching (dense growth, trees up to 6\")",
