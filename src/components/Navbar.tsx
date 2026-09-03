@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -6,6 +7,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
+  { label: "Pricing Guide", to: "/land-clearing-cost" },
 ];
 
 const Navbar = () => {
