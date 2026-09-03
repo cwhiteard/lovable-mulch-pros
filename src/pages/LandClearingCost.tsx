@@ -142,7 +142,7 @@ const LandClearingCost = () => {
               ))}
             </div>
             <p className="text-muted-foreground/70 font-body text-sm mt-4">
-              These are general industry ranges for this type of work — not a quote. Small jobs
+              These are general industry ranges for this type of work, not a quote. Small jobs
               often have a minimum charge. Your actual price is set after a free walkthrough of your
               property.
             </p>
