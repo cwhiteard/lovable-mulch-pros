@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Analytics } from "./components/Analytics";
 import Index from "./pages/Index";
 import ServicePage from "./pages/ServicePage";
+import LandClearingCost from "./pages/LandClearingCost";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
