@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -6,6 +7,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
+  { label: "Pricing Guide", to: "/land-clearing-cost" },
 ];
 
 const Navbar = () => {
@@ -19,15 +21,25 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.to ? (
+              <Link
+                key={link.label}
+                to={link.to}
+                className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-muted-foreground hover:text-foreground font-body text-sm transition-colors"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <a
             href="#contact"
             className="bg-primary text-primary-foreground px-5 py-2 rounded font-body text-sm font-semibold hover:bg-primary/90 transition-colors"
@@ -48,16 +60,27 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-background border-t border-border py-4">
           <div className="container flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-muted-foreground hover:text-foreground font-body text-base"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+          {navLinks.map((link) =>
+              link.to ? (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className="text-muted-foreground hover:text-foreground font-body text-base"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-muted-foreground hover:text-foreground font-body text-base"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <a
               href="#contact"
               className="bg-primary text-primary-foreground px-5 py-2 rounded font-body text-sm font-semibold text-center"
