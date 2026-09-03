@@ -19,6 +19,7 @@ const App = () => (
         <Analytics />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/services/:slug" element={<ServicePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
