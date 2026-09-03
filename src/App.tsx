@@ -7,6 +7,7 @@ import { Analytics } from "./components/Analytics";
 import Index from "./pages/Index";
 import ServicePage from "./pages/ServicePage";
 import LandClearingCost from "./pages/LandClearingCost";
+import LocationPage from "./pages/LocationPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/land-clearing-cost" element={<LandClearingCost />} />
+          <Route path="/areas/:slug" element={<LocationPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
