@@ -3,7 +3,7 @@ import { CheckCircle } from "lucide-react";
 const highlights = [
   "Locally owned & operated",
   "Free estimates on all projects",
-  "No hauling, no burning — mulch stays on-site",
+  "No hauling, no burning; mulch stays on-site",
   "Fully insured and licensed",
   "Minimal ground disturbance",
 ];
@@ -21,7 +21,7 @@ const About = () => {
               Clear the Brush, Keep the Land
             </h2>
             <p className="text-muted-foreground text-lg font-body leading-relaxed mb-8">
-              H & L Solutions LLC specializes in forestry mulching — the most efficient, eco-friendly way to
+              H & L Solutions LLC specializes in forestry mulching, the most efficient, eco-friendly way to
               reclaim overgrown land. Our equipment grinds underbrush and small trees into natural mulch
               that stays on-site, enriching your soil and preventing erosion.
             </p>

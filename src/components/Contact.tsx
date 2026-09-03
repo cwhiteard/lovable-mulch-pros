@@ -130,7 +130,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground font-body">Service Area</p>
-                  <p className="text-foreground font-body font-semibold">Alexander City Area — Tallapoosa, Clay & Surrounding Counties</p>
+                  <p className="text-foreground font-body font-semibold">Alexander City Area: Tallapoosa, Clay & Surrounding Counties</p>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                   Tell us about your project
                 </label>
                 <Textarea
-                  placeholder="Describe the area — approximate acreage, type of vegetation, access to the site, etc."
+                  placeholder="Describe the area: approximate acreage, type of vegetation, access to the site, etc."
                   className="font-body min-h-[120px] bg-card border-border"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -189,7 +189,7 @@ const Contact = () => {
                 Get a Free Quote
               </Button>
               <p className="text-xs text-muted-foreground font-body text-center">
-                Submitting opens your email app with these details pre-filled to hlsolutionsal@gmail.com — just hit send. Prefer to talk? Call (256) 749-5191.
+                Submitting opens your email app with these details pre-filled to hlsolutionsal@gmail.com; just hit send. Prefer to talk? Call (256) 749-5191.
               </p>
 
             </form>
