@@ -214,6 +214,23 @@ export const locations: LocationDetail[] = [
       "Property line and boundary clearing",
     ],
   },
+  {
+    slug: "lake-martin",
+    city: "Lake Martin",
+    county: "Tallapoosa, Elmore & Coosa Counties",
+    metaTitle: "Forestry Mulching at Lake Martin, AL | H & L Solutions",
+    metaDescription:
+      "Forestry mulching and land clearing at Lake Martin, AL. Clear lake lots, open views, and reclaim shoreline acreage with no burning or hauling. Free quotes.",
+    headline: "Lake Martin Land Clearing & View Opening",
+    intro:
+      "Lake Martin's wooded lots and shoreline acreage can become overgrown quickly, blocking views and limiting access. We clear underbrush, open up lake views, and reclaim shoreline property with forestry mulching, an eco-friendly process that leaves mulch in place of burn piles.",
+    localDetails: [
+      "Lake lot clearing and view improvement around Lake Martin",
+      "Shoreline and near-water property clearing",
+      "Trail cutting for lake access and recreation",
+      "Erosion-friendly mulching that protects the shoreline",
+    ],
+  },
 ];
 
 export const getLocation = (slug: string) => locations.find((l) => l.slug === slug);
