@@ -10,6 +10,10 @@ const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getService(slug) : undefined;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   if (!service) return <Navigate to="/" replace />;
 
   const Icon = service.icon;
