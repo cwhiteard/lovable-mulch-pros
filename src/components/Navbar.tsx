@@ -60,16 +60,27 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-background border-t border-border py-4">
           <div className="container flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-muted-foreground hover:text-foreground font-body text-base"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+          {navLinks.map((link) =>
+              link.to ? (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className="text-muted-foreground hover:text-foreground font-body text-base"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-muted-foreground hover:text-foreground font-body text-base"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <a
               href="#contact"
               className="bg-primary text-primary-foreground px-5 py-2 rounded font-body text-sm font-semibold text-center"
