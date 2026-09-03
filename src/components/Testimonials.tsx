@@ -2,7 +2,7 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Excellent experience from start to finish — efficient, thorough, and very professional. Our property looks incredible.",
+    text: "Excellent experience from start to finish: efficient, thorough, and very professional. Our property looks incredible.",
     author: "Sarah M.",
   },
   {

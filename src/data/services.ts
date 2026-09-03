@@ -29,11 +29,11 @@ export const services: ServiceDetail[] = [
       "Professional forestry mulching in Alexander City and Tallapoosa County. One machine clears brush and trees up to 6\" and leaves nutrient-rich mulch. Free quotes.",
     headline: "Reclaim Your Land in a Single Pass",
     intro:
-      "Our Kubota SVL75-3 with a drum mulcher grinds standing brush, saplings, and trees up to 6 inches into a clean layer of mulch — right where they stand. No burn piles, no hauling fees, no bare dirt left behind. The mulch layer holds moisture, prevents erosion, and breaks down into topsoil.",
+      "Our Kubota SVL75-3 with a drum mulcher grinds standing brush, saplings, and trees up to 6 inches into a clean layer of mulch, right where they stand. No burn piles, no hauling fees, no bare dirt left behind. The mulch layer holds moisture, prevents erosion, and breaks down into topsoil.",
     benefits: [
-      "One machine, one pass — no dozers, burn permits, or dump fees",
+      "One machine, one pass, no dozers, burn permits, or dump fees",
       "Mulch layer prevents erosion and returns nutrients to the soil",
-      "Selective clearing — keep the trees you want, remove the rest",
+      "Selective clearing: keep the trees you want, remove the rest",
       "Handles vegetation up to 6 inches in diameter",
       "Eco-friendly alternative to burning or landfills",
     ],
@@ -52,13 +52,13 @@ export const services: ServiceDetail[] = [
     slug: "underbrush-clearing",
     icon: Trees,
     title: "Underbrush Clearing",
-    shortDescription: "Dense brush, saplings, and vegetation up to 6\" — cleared clean.",
+    shortDescription: "Dense brush, saplings, and vegetation up to 6\", cleared clean.",
     metaTitle: "Underbrush Clearing in Tallapoosa County | H & L Solutions",
     metaDescription:
       "Clear dense underbrush, saplings, and thick vegetation from your property. Serving Alexander City and 10+ Alabama counties. Get a free quote today.",
     headline: "Turn Impenetrable Thicket Into Usable Land",
     intro:
-      "Years of unchecked growth can swallow a property. We mulch dense underbrush, saplings, and thick vegetation up to 6 inches, opening up your land for building, recreation, or simply enjoying it again — without disturbing the soil or mature trees you want to keep.",
+      "Years of unchecked growth can swallow a property. We mulch dense underbrush, saplings, and thick vegetation up to 6 inches, opening up your land for building, recreation, or simply enjoying it again, without disturbing the soil or mature trees you want to keep.",
     benefits: [
       "Clears dense brush and saplings up to 6 inches",
       "Preserves mature trees and topsoil",
@@ -104,7 +104,7 @@ export const services: ServiceDetail[] = [
       "Precise property line and fence row clearing in Alexander City and surrounding Alabama counties. See your boundaries again. Free quotes.",
     headline: "See Your Boundaries Again",
     intro:
-      "Overgrown fence rows hide your boundary lines, strain fences, and invite disputes. We clear fence lines and property boundaries precisely — opening them up for surveyors, fence repairs, and peace of mind — while leaving a clean mulched path you can actually walk.",
+      "Overgrown fence rows hide your boundary lines, strain fences, and invite disputes. We clear fence lines and property boundaries precisely, opening them up for surveyors, fence repairs, and peace of mind, while leaving a clean mulched path you can actually walk.",
     benefits: [
       "Reopens survey lines and boundary markers",
       "Extends the life of existing fencing",
@@ -119,7 +119,7 @@ export const services: ServiceDetail[] = [
     beforeAfter: {
       before: beforeFence,
       after: afterFence,
-      caption: "Fence line cleanup — boundary reopened",
+      caption: "Fence line cleanup, boundary reopened",
     },
   },
   {
@@ -132,7 +132,7 @@ export const services: ServiceDetail[] = [
       "Forestry mulching firebreaks and defensible space around homes and structures in Tallapoosa County, AL. Reduce wildfire fuel. Free quotes.",
     headline: "Defensible Space That Protects What Matters",
     intro:
-      "Dry brush and ladder fuel around a home or barn is a wildfire's path in. We mulch that fuel into the ground, creating firebreaks and defensible space around structures — reducing risk without stripping the land bare.",
+      "Dry brush and ladder fuel around a home or barn is a wildfire's path in. We mulch that fuel into the ground, creating firebreaks and defensible space around structures, reducing risk without stripping the land bare.",
     benefits: [
       "Removes ladder fuels and dry brush near structures",
       "Creates clean firebreaks along property edges",
@@ -155,10 +155,10 @@ export const services: ServiceDetail[] = [
       "Custom trail cutting for hunting, ATV, and property access in Alexander City, AL and surrounding counties. Clean mulched paths. Free quotes.",
     headline: "Clean Trails Through Woods and Fields",
     intro:
-      "Whether it's hunting access, ATV trails, or a path to the back forty, we cut clean, mulched trails through woods and fields — no ruts, no piles, just a path you can use the same day.",
+      "Whether it's hunting access, ATV trails, or a path to the back forty, we cut clean, mulched trails through woods and fields with no ruts, no piles, just a path you can use the same day.",
     benefits: [
       "Hunting, ATV, and walking trails cut to your layout",
-      "Mulched surface — usable immediately, no mud holes",
+      "Mulched surface, usable immediately, no mud holes",
       "Selective cutting keeps the woods' character",
       "Shooting lanes and food plot access available",
     ],
@@ -204,7 +204,7 @@ export const services: ServiceDetail[] = [
       "Brush piles, fallen limbs, and downed timber make land unusable and attract pests. Using grapple-equipped equipment, we pile, mulch, or remove debris efficiently. For larger trees, we handle piling or coordinate with specialized tree services to get the job done right.",
     benefits: [
       "Grapple service for fallen timber and heavy debris",
-      "Brush piles mulched on site — no hauling costs",
+      "Brush piles mulched on site, no hauling costs",
       "Larger trees piled or coordinated with tree services",
       "Restores usable, clean ground fast",
     ],
@@ -218,21 +218,21 @@ export const services: ServiceDetail[] = [
     slug: "storm-cleanup",
     icon: CloudRain,
     title: "Storm Clean Up",
-    shortDescription: "Fast response to storm damage — downed trees, debris, and restoration.",
+    shortDescription: "Fast response to storm damage: downed trees, debris, and restoration.",
     metaTitle: "Storm Damage Cleanup in Alexander City, AL | H & L Solutions",
     metaDescription:
       "Fast storm cleanup in Alexander City and surrounding Alabama counties. Downed trees, debris removal, and land restoration. Call 256-749-5191.",
     headline: "Fast Response When Storms Hit",
     intro:
-      "Alabama storms leave downed trees, scattered limbs, and blocked access behind. We respond quickly to clear storm debris, open driveways and roads, and restore your property — mulching what we can on site so you're not left with piles.",
+      "Alabama storms leave downed trees, scattered limbs, and blocked access behind. We respond quickly to clear storm debris, open driveways and roads, and restore your property, mulching what we can on site so you're not left with piles.",
     benefits: [
       "Fast response after storm damage",
       "Reopens driveways, roads, and access points",
-      "On-site mulching — no waiting on haul-off",
+      "On-site mulching, no waiting on haul-off",
       "Full debris removal and land restoration",
     ],
     process: [
-      "Call us — we prioritize storm-damage jobs",
+      "Call us; we prioritize storm-damage jobs",
       "Clear access points first, then the rest of the property",
       "Mulch or remove debris and restore the ground",
     ],

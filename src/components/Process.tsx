@@ -12,7 +12,7 @@ const steps = [
   {
     number: "3",
     title: "Enjoy Your Land",
-    description: "Your property is transformed — cleared and ready for your next steps.",
+    description: "Your property is transformed, cleared and ready for your next steps.",
   },
 ];
 

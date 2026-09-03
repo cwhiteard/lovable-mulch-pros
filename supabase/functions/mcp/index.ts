@@ -34,14 +34,14 @@ var get_company_info_default = defineTool({
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.26.2";
 var services = [
   { name: "Forestry Mulching", description: "Reclaim land in a single pass. No burning, no hauling." },
-  { name: "Underbrush Clearing", description: 'Dense brush, saplings, and vegetation up to 6" \u2014 cleared clean.' },
+  { name: "Underbrush Clearing", description: 'Dense brush, saplings, and vegetation up to 6", cleared clean.' },
   { name: "Brush Hogging", description: "Mow down tall grass, weeds, and overgrown fields efficiently." },
   { name: "Property Line Clearing", description: "Precise boundary and fence row maintenance." },
   { name: "Fire Prevention", description: "Create defensible space and firebreaks around structures." },
   { name: "Trail Cutting", description: "Clean access paths through woods and fields." },
   { name: "Invasive Growth Removal", description: "Eliminate honeysuckle, briars, and invasive species." },
   { name: "Debris Removal", description: "Clear fallen limbs, brush piles, and land debris from your property." },
-  { name: "Storm Clean Up", description: "Fast response to storm damage \u2014 downed trees, debris, and restoration." }
+  { name: "Storm Clean Up", description: "Fast response to storm damage: downed trees, debris, and restoration." }
 ];
 var list_services_default = defineTool2({
   name: "list_services",

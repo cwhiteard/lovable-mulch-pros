@@ -53,9 +53,9 @@ const priceRanges = [
 
 const savings = [
   "One machine does the work of a dozer, haulers, and burn crew",
-  "No hauling or dump fees — material stays on site as mulch",
+  "No hauling or dump fees: material stays on site as mulch",
   "No burn permits or waiting on burn conditions",
-  "No reseeding or erosion repair — the mulch layer protects the soil",
+  "No reseeding or erosion repair, since the mulch layer protects the soil",
 ];
 
 const LandClearingCost = () => {
@@ -114,7 +114,7 @@ const LandClearingCost = () => {
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
               The honest answer: it depends on your land. Acreage, brush density, terrain, and the
               finish you want all move the price. Below are typical ranges for forestry mulching and
-              land clearing in Alabama — and how to get an exact number for your property with a free
+              land clearing in Alabama, and how to get an exact number for your property with a free
               on-site quote.
             </p>
           </div>
@@ -199,11 +199,11 @@ const LandClearingCost = () => {
             </h2>
             <p className="text-muted-foreground font-body leading-relaxed mb-6">
               Every property is different, so we price by project, day, or hour based on acreage,
-              brush density, and terrain — whichever is fairest for your job. The process is simple:
+              brush density, and terrain, whichever is fairest for your job. The process is simple:
             </p>
             <ol className="space-y-4">
               {[
-                "Call or request a quote — tell us roughly what you're working with",
+                "Call or request a quote and tell us roughly what you're working with",
                 "We walk the property with you (free) and talk through what stays and what goes",
                 "You get a firm, no-obligation price before any work is scheduled",
               ].map((step, i) => (
@@ -222,7 +222,7 @@ const LandClearingCost = () => {
         <section className="py-16">
           <div className="container max-w-3xl text-center">
             <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-              Get an Exact Price — Free
+              Get an Exact Price, Free
             </h2>
             <p className="text-muted-foreground font-body mb-8">
               Serving Alexander City, Tallapoosa County, Clay County, and 10+ surrounding counties.
